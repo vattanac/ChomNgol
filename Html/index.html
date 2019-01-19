@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+
+    <link rel="icon" href="../Resources/box.svg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="../CSS/Homestyle.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <a href="#">
+                <img src="../Resources/box.svg" alt="logo" style="margin-left: 100px;">
+            </a>
+
+
+            <div class="searchbar input-group col-md-4 ">
+                <input class="form-control py-2 border-right-0 border" type="search" placeholder="search" id="example-search-input">
+                <span class="input-group-append">
+                    <button class=" btn btn-outline-secondary border-left-0 border" type="button">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </span>
+            </div>
+
+
+            <button type="button" class="askbtn btn btn-primary">Ask Question</button>
+
+            <ul class="mynav navbar-nav mr-auto">
+                <img class="ml-4" src="../Resources/bell.svg" style="width:35px;height:35px" alt="">
+                <img class="ml-4" src="../Resources/profilepic.jpg" style="width:38px;height:38px;border-radius:50%"
+                    alt="">
+                <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Vattanac Sim
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Profile</a>
+                        <a class="dropdown-item" href="#">Setting</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">
+                            LogOut &nbsp;<i class="fas fa-sign-out-alt" style="color:gray"></i>
+                        </a>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <div class="row mt-5">
+        <div class="col-md-1 col-12">Space</div>
+        <div class="col-md-7 col-12 ml-3 ml-md-0">
+
+            <!-- Start Dropdown -->
+            <div class="dropdown show">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Top Question
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#">Top Question</a>
+                    <a class="dropdown-item" href="#">Top Vote</a>
+
+                </div>
+            </div>
+            <!-- Start Dropdown -->
+
+            <div>
+                <!-- <img class="ml-4" src="../Resources/profilepic.jpg" style="width:38px;height:38px;border-radius:50%"
+                    alt=""> -->
+                <!-- start Card -->
+                <div class="card mt-5" style="width: 100%">
+                    <div class="card-body">
+                            <div class="float-right border bg-light rounded" style="position: absolute; top:-18px;border-radius: 8px !important; ">
+                                    <img src="../Resources/swift.svg" class="mr-0  col-12" style="width: 35px;padding-left: 0px;padding-right: 0px;" alt="">
+                                    <label for="" class="pr-2 ">Swift</label>
+                                </div>
+                        <div class="row">
+                            <div class="mt-4 userArea col-2">
+                                <img class="qprofile" src="../Resources/profilepic.jpg" alt="">
+                                <p class="qname text-xs-center">VattanacSim</p>
+                            </div>
+
+                            <div class="col-sm-10 col-md-10 col-12">
+                                <h5 class="card-title">React component table is being rendered multiple times or
+                                    duplicated after updating state</h5>
+                                <div class="">
+                                    <img class="test" src="../Resources/date.svg" style="width:15px;height:15px;" alt="">
+                                    <h6 class="ml-4 card-subtitle mb-2 text-muted">4hours ago</h6>
+                                </div>
+
+                                <p class="card-text">I'm updating state with changes in props by replacing the old
+                                    state. In render, the data is either being duplicated or rendering multiple times
+                                    from the state after it is reset with new props. It is happening from after the
+                                    first render.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- end Card -->
+
+
+            </div>
+
+        </div>
+        <div class="col-md-4 col-12">Tage List</div>
+    </div>
+</body>
+
+</html>
